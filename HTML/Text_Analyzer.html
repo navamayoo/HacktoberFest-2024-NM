@@ -2,56 +2,65 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Analyzer</title>
+    <link rel="stylesheet" href="../css/style.css">
     <script>
         // function created to count number of characters ,words,lines in the text.
         function analyzeText() {
-            
+
             const text = document.getElementById("inputText").value;
-            
+
             const charCount = text.length;
-            
+
             const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
-            
+
             const lineCount = text.split(/\n/).length;
-            
+
             document.getElementById("charCount").value = ` ${charCount}`;
             document.getElementById("wordCount").value = ` ${wordCount}`;
             document.getElementById("lineCount").value = ` ${lineCount}`;
         }
     </script>
 </head>
+
 <body>
-    <div>
+    <div class="container">
 
-    <h1>Text Analyzer</h1>
-    
-    <form onsubmit="event.preventDefault();analyzeText();">
-        <label for="inputText">Enter text:</label><br>
-        <textarea id="inputText" rows="10" cols="50" ></textarea><br><br>   <!-- Text box to write multi line text. -->
-        <input type="submit" value="Analyze Text">  <!-- Submit button to trigger analyseText() function . -->
-    </form>
-    
-    
-    <div id="results">
-        <br>
-        <label for="">Character :</label>
-        <input id="charCount" value="" type="text" size="6"> </input>
+        <h1>Text Analyzer</h1>
 
-        <br> <br>
-        
-        <label for="">Words:</label>
-        <input id="wordCount" value="" type="text" size="6"> </input>
-        
-         <br><br>
+        <form onsubmit="event.preventDefault();analyzeText();">
+            <label for="inputText">Enter text:</label><br>
+            <textarea id="inputText" rows="10" cols="50"></textarea><br><br> <!-- Text box to write multi line text. -->
+            <div class="btn-div">
+                <input class="btn" type="submit" value="Analyze Text">
+            </div> <!-- Submit button to trigger analyseText() function . -->
+        </form>
 
-        <label for="">Lines:</label>
-        <input id="lineCount" value="" type="text" size="6"> </input>
-    </div>
-    
+
+        <div id="results">
+            <div >
+                <label for="">Character :</label>
+                <input id="charCount" value="" type="text" size="6"> </input>
+            </div>
+
+
+            <div>
+                <label for="">Words:</label>
+                <input id="wordCount" value="" type="text" size="6"> </input>
+            </div>
+
+            <div>
+                
+            <label for="">Lines:</label>
+            <input id="lineCount" value="" type="text" size="6"> </input>
+            </div>
+        </div>
+
 
 </body>
+
 </html>
