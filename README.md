@@ -19,7 +19,7 @@ This repository is created to help beginners make their first pull requests and 
 Feel free to contribute by solving very easy coding challenges, fixing bugs, improving documentation, or adding new features. This is a friendly space for first-time contributors to learn and grow while supporting open source. 💻
 
 Let’s make Hacktoberfest 2024 an awesome experience together! 🚀
-
+**Don't Forget To Star the Repo!!**
 <hr>
 
 
