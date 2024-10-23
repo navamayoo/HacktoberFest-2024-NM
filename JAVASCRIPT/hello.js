@@ -1,1 +1,0 @@
-console.log("Hello World! First Hacktober First Contribution <3")
