@@ -1,0 +1,1 @@
+Before running the code , install the Easyocr, import OpenCV in the system and then run.
