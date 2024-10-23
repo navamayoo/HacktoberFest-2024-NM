@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.bmi-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.bmi-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.bmi-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bmi-form button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.underweight {
+    color: #ffb74d;
+}
+
+.normal {
+    color: #4caf50;
+}
+
+.overweight {
+    color: #ff9800;
+}
+
+.obese {
+    color: #f44336;
+}
