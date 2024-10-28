@@ -1,5 +1,4 @@
 # React Currency Converter Web App
-## React + Vite
 
 This open-source project is a **Currency Converter Web Application** built using **React** and **Vite**. The app allows users to convert between multiple currencies with live exchange rates, fetched from a public API. It showcases best practices in **custom hooks** for reusability and **API handling** for reliable, real-time data.
 
